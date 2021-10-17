@@ -1,4 +1,4 @@
-import React, { FC, useMemo } from 'react';
+import React, { FC } from 'react';
 import { useColorScheme } from 'react-native';
 import { lightColors, darkColors, ColorValue } from './colors';
 

@@ -1,6 +1,5 @@
 import React, { FC, useMemo } from 'react';
 import DatePicker from 'react-native-datepicker';
-// import DateTimePicker from '@react-native-community/datetimepicker';
 
 import createStyles from './styles';
 import { useTheme } from '../../utils/theme';

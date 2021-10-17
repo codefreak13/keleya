@@ -3,6 +3,7 @@ import { View, Image, Text, ScrollView, KeyboardAvoidingView } from 'react-nativ
 import { NavigationProp, ParamListBase } from '@react-navigation/native';
 import { Formik } from "formik";
 import * as Yup from "yup";
+import { useTranslation } from 'react-i18next';
 
 import createStyles from './styles';
 import { useTheme } from '../../utils/theme';
@@ -13,35 +14,36 @@ interface IProps {
     navigation: NavigationProp<ParamListBase>
 }
 
-const validationSchema = Yup.object().shape({
-    name: Yup.string()
-        .required('name is required')
-        .label('name')
-});
-
 const Name: FC<IProps> = ({ navigation }) => {
+    const { t } = useTranslation()
     const theme = useTheme();
     const styles = useMemo(() => createStyles(theme), [theme]);
     const { bodyStyle, buttonStyle, imageStyle, textStyle, details, error } = styles
+
+    const validationSchema = Yup.object().shape({
+        name: Yup.string()
+            .required(t('name:name_validation'))
+            .label('name')
+    });
+
     return (
         <Formik
-            initialValues={{ name: 'ddddd' }}
+            initialValues={{ name: '' }}
             validationSchema={validationSchema}
             onSubmit={() => navigation.navigate('DueDate')}
         >
             {({ touched, errors, handleChange, handleBlur, handleSubmit, values }) => (
                 <View style={bodyStyle}>
                     <Image source={COUCH_SMILE} style={imageStyle} />
-                    <Text style={textStyle}>It's great that you're here! First{'\n'}things first, what should we{'\n'}call you?</Text>
+                    <Text style={textStyle}>{t('name:title')}</Text>
                     <View style={details}>
                         <KeyboardAvoidingView>
                             <ScrollView
                                 contentContainerStyle={{ flexGrow: 1 }}
                                 showsVerticalScrollIndicator={false}
-                                keyboardShouldPersistTaps="handled"
-                            >
+                                keyboardShouldPersistTaps="handled">
                                 <TextInput
-                                    placeholder="Your Name"
+                                    placeholder={t('name:name_placeholder')}
                                     onChangeText={handleChange('name')}
                                     onBlur={handleBlur('name')}
                                     value={values.name}
@@ -53,7 +55,7 @@ const Name: FC<IProps> = ({ navigation }) => {
                             </ScrollView>
                         </KeyboardAvoidingView>
                     </View>
-                    <Button title='Continue' buttonColor={!values.name || errors.name ? 'grey' : 'dark'} disabled={!values.name || errors.name ? true : false} onPress={handleSubmit} buttonStyle={buttonStyle} />
+                    <Button title={t('name:btn_title')} buttonColor={!values.name || errors.name ? 'grey' : 'dark'} onPress={handleSubmit} buttonStyle={buttonStyle} />
                     <BackButton navigation={navigation} />
                     <Line />
                 </View>

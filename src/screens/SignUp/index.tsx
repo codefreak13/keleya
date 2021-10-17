@@ -8,23 +8,14 @@ import createStyles from './styles';
 import { useTheme } from '../../utils/theme';
 import { AUTHENTICATION } from '../../assets'
 import { Button, Line, BackButton, TextInput, CheckBox } from '../../components'
+import { useTranslation } from 'react-i18next';
 
 interface IProps {
     navigation: NavigationProp<ParamListBase>
 }
 
-const validationSchema = Yup.object().shape({
-    email: Yup.string()
-        .email('Please enter valid email')
-        .required('Email is required')
-        .label('Email'),
-    password: Yup.string()
-        .min(6, ({ min }) => `Password must be at least ${min} characters`)
-        .required('Password is required')
-        .label('Password'),
-});
-
 const SignUp: FC<IProps> = ({ navigation }) => {
+    const { t } = useTranslation()
     const theme = useTheme();
     const styles = useMemo(() => createStyles(theme), [theme]);
     const { bodyStyle, buttonStyle, imageStyle, textStyle, details, error, avoidingView } = styles
@@ -33,16 +24,26 @@ const SignUp: FC<IProps> = ({ navigation }) => {
     const { check } = state
 
     // const isChecked = ()=>setstate({})
+    const validationSchema = Yup.object().shape({
+        email: Yup.string()
+            .email(t('signup:email_validation'))
+            .required('Email is required')
+            .label('Email'),
+        password: Yup.string()
+            .min(6, () => t('signup:password_validation'))
+            .required('Password is required')
+            .label('Password'),
+    });
 
     return (
         <Formik
-            initialValues={{ email: 'a@g.co', password: 'djdjdjdjj' }}
+            initialValues={{ email: '', password: '' }}
             validationSchema={validationSchema}
             onSubmit={() => { navigation.navigate('Name') }}>
             {({ touched, errors, handleChange, handleBlur, handleSubmit, values }) => (
                 <View style={bodyStyle}>
                     <Image source={AUTHENTICATION} style={imageStyle} />
-                    <Text style={textStyle}>Add your details below to set{'\n'}up an account</Text>
+                    <Text style={textStyle}>{t('signup:title')}</Text>
 
                     <View style={details}>
                         <KeyboardAvoidingView style={avoidingView}>
@@ -53,7 +54,7 @@ const SignUp: FC<IProps> = ({ navigation }) => {
                             >
                                 <View style={{ width: '100%' }}>
                                     <TextInput
-                                        placeholder="example@gmail.com"
+                                        placeholder={t('signup:email_placeholder')}
                                         onChangeText={handleChange('email')}
                                         onBlur={handleBlur('email')}
                                         value={values.email}
@@ -62,7 +63,7 @@ const SignUp: FC<IProps> = ({ navigation }) => {
                                         <Text style={error}>{errors.email}</Text>
                                     )}
                                     <TextInput
-                                        placeholder="Enter a password"
+                                        placeholder={t('signup:password_placeholder')}
                                         onChangeText={handleChange('password')}
                                         onBlur={handleBlur('password')}
                                         value={values.password}
@@ -71,11 +72,11 @@ const SignUp: FC<IProps> = ({ navigation }) => {
                                     {touched.password && errors.password && (
                                         <Text style={error}>{errors.password}</Text>
                                     )}
-                                    <CheckBox title="I've read the privacy policy" check={check} />
-                                    <CheckBox title="I accept the terms & conditions and Keleya's advice" check={check} />
+                                    <CheckBox title={t('signup:privacy_policy')} check={check} />
+                                    <CheckBox title={t('signup:terms')} check={check} />
                                 </View>
                             </ScrollView>
-                            <Button title='Create account' buttonColor={!values.email || !values.password || errors.password || errors.email ? 'grey' : 'dark'} disabled={!values.email || !values.password || errors.password || errors.email ? true : false} onPress={handleSubmit} buttonStyle={buttonStyle} />
+                            <Button title={t('signup:btn_title')} buttonColor={!values.email || !values.password || errors.password || errors.email ? 'grey' : 'dark'} onPress={handleSubmit} buttonStyle={buttonStyle} />
                         </KeyboardAvoidingView>
                     </View>
 

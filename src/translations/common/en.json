@@ -1,0 +1,57 @@
+{
+    "intro": {
+      "title": "For a fit and relaxed\npregnancy",
+      "signup_btn": "Get started",
+      "login_btn": "Or login"
+    },
+    "signup": {
+      "title": "Add your details below to set\nup an account",
+      "email_placeholder": "example@gmail.com",
+      "password_placeholder": "Enter a password",
+      "privacy_policy": "I've read and accept the privacy policy",
+      "terms": "I accept the terms & condition and Keleya's advice",
+      "btn_title": "Create account",
+      "email_validation":"Please enter valid email",
+      "password_validation":"Password must be at least 6 characters"
+    },
+    "signin": {
+      "title": "Welcome back!",
+      "email_placeholder": "example@gmail.com",
+      "password_placeholder": "Enter a password",
+      "forgotten_password": "Have you forgotten your password?",
+      "btn_title": "Log in",
+      "email_validation":"Please enter valid email",
+      "password_validation":"Password must be at least 6 characters"
+    },
+    "name": {
+      "title": "It's great that you're here! First\nthings first, hat should we\ncall you?",
+      "name_placeholder": "Your Name",
+      "btn_title": "Continue",
+      "name_validation":"Name is required"
+    },
+    "duedate": {
+      "title": "When is your baby due, Sam?",
+      "btn_title": "Continue",
+      "date_validation":"Please choose date"
+    },
+    "activetimes": {
+      "title": "How many times a week do\nyou want to be active?",
+      "btn_title": "Continue",
+      "freq_validation":"frequency is required",
+      "once":"Once a week",
+      "twice":"2 times a week",
+      "thrice":"3 times a week",
+      "four":"4 times a week",
+      "five":"5 times a week",
+      "six":"6 times a week",
+      "seven":"7 times a week",
+      "eight":"8 times a week",
+      "nine":"9 times a week",
+      "ten":"10 times a week"
+    },
+    "notification": {
+      "title": "Get notifications to boost\nyour motivation",
+      "skip": "Skip",
+      "btn_title": "Allow notifications"
+    }
+  }

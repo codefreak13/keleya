@@ -1,0 +1,57 @@
+{
+    "intro": {
+      "title": "Für eine fitte und entspannte\nSchwangerschaft",
+      "signup_btn": "Loslegen",
+      "login_btn": "oder einloggen"
+    },
+    "signup": {
+      "title": "Fügen Sie unten Ihre Daten hinzu, um\nein Konto einzurichten",
+      "email_placeholder": "beispiel@gmail.com",
+      "password_placeholder": "Geben Sie ein Passwort ein",
+      "privacy_policy": "Ich habe die Datenschutzerklärung gelesen und akzeptiere sie",
+      "terms": "Ich akzeptiere die Allgemeinen Geschäftsbedingungen und den Rat von Keleya",
+      "btn_title": "Benutzerkonto erstellen",
+      "email_validation":"Bitte eine gültige Email eingeben",
+      "password_validation":"Passwort muss mindestens 6 Zeichen lang sein"
+    },
+    "signin": {
+      "title": "Willkommen zurück!",
+      "email_placeholder": "beispiel@gmail.com",
+      "password_placeholder": "Geben Sie ein Passwort ein",
+      "forgotten_password": "Hast du dein Passwort vergessen?",
+      "btn_title": "Einloggen",
+      "email_validation":"Bitte eine gültige Email eingeben",
+      "password_validation":"Passwort muss mindestens 6 Zeichen lang sein"
+    },
+    "name": {
+      "title": "Schön, dass Sie hier sind! Zuerst\nDinge zuerst, wie sollen wir\nSie anrufen?",
+      "name_placeholder": "Dein Name",
+      "btn_title": "fortsetzen",
+      "name_validation":"Name ist erforderlic"
+    },
+    "duedate": {
+      "title": "Wann ist dein Baby fällig, Sam?",
+      "btn_title": "fortsetzen",
+      "date_validation":"Bitte Datum wählen"
+    },
+    "activetimes": {
+      "title": "Wie oft pro Woche\nmöchten Sie aktiv sein?",
+      "btn_title": "fortsetzen",
+      "freq_validation":"Frequenz ist erforderlich",
+      "once":"Wöchentlich",
+      "twice":"2 mal in der Woche",
+      "thrice":"3x wöchentlich",
+      "four":"4 Mal in der Woche",
+      "five":"5 mal die Woche",
+      "six":"6 mal die Woche",
+      "seven":"7 mal die Woche",
+      "eight":"8 mal die Woche",
+      "nine":"9 mal die Woche",
+      "ten":"10 mal die Woche"
+    },
+    "notification": {
+      "title": "Erhalten Sie Benachrichtigungen, um \nIhre Motivation zu steigern",
+      "skip": "Überspringen",
+      "btn_title": "Benachrichtigungen zulassen"
+    }
+  }

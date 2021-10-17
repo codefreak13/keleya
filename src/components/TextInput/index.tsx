@@ -12,9 +12,9 @@ interface IProps {
     placeholder: string;
     placeholderTextColor?: ColorValue | any;
     style?: StyleProp<ViewStyle>;
-    value: string | undefined
+    value: string,
     secureTextEntry?: boolean,
-    textAlign?: "center" | "right" | "left" | undefined
+    textAlign?: "center" | "right" | "left"
 }
 
 const BaseTextInput: FC<IProps> = ({ onChangeText, onBlur, placeholder, placeholderTextColor, style, value, secureTextEntry, textAlign }) => {

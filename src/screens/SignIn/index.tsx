@@ -8,36 +8,38 @@ import createStyles from './styles';
 import { useTheme } from '../../utils/theme';
 import { AUTHENTICATION } from '../../assets'
 import { Button, Line, BackButton, TextInput } from '../../components'
+import { useTranslation } from 'react-i18next';
 
 interface IProps {
     navigation: NavigationProp<ParamListBase>
 }
 
-const validationSchema = Yup.object().shape({
-    email: Yup.string()
-        .email('Please enter valid email')
-        .required('Email is required')
-        .label('Email'),
-    password: Yup.string()
-        .min(6, ({ min }) => `Password must be at least ${min} characters`)
-        .required('Password is required')
-        .label('Password'),
-});
-
 const SignIn: FC<IProps> = ({ navigation }) => {
+    const { t } = useTranslation()
     const theme = useTheme();
     const styles = useMemo(() => createStyles(theme), [theme]);
     const { bodyStyle, buttonStyle, imageStyle, textStyle, details, error, forgotText } = styles
+
+    const validationSchema = Yup.object().shape({
+        email: Yup.string()
+            .email(t('signin:email_validation'))
+            .required('Email is required')
+            .label('Email'),
+        password: Yup.string()
+            .min(6, () => t('signin:email_validation'))
+            .required('Password is required')
+            .label('Password'),
+    });
     return (
         <Formik
-            initialValues={{ email: 'a@g.co', password: 'djdjdjdjj' }}
+            initialValues={{ email: '', password: '' }}
             validationSchema={validationSchema}
             onSubmit={() => navigation.navigate('Notification')}
         >
             {({ touched, errors, handleChange, handleBlur, handleSubmit, values }) => (
                 <View style={bodyStyle}>
                     <Image source={AUTHENTICATION} style={imageStyle} />
-                    <Text style={textStyle}>Welcome back!</Text>
+                    <Text style={textStyle}>{t('signin:title')}</Text>
                     <KeyboardAvoidingView style={{ flex: 1 }}>
                         <ScrollView
                             contentContainerStyle={{ flexGrow: 1 }}
@@ -46,7 +48,7 @@ const SignIn: FC<IProps> = ({ navigation }) => {
                         >
                             <View style={details}>
                                 <TextInput
-                                    placeholder="example@gmail.com"
+                                    placeholder={t('signin:email_placeholder')}
                                     onChangeText={handleChange('email')}
                                     onBlur={handleBlur('email')}
                                     value={values.email}
@@ -55,7 +57,7 @@ const SignIn: FC<IProps> = ({ navigation }) => {
                                     <Text style={error}>{errors.email}</Text>
                                 )}
                                 <TextInput
-                                    placeholder="Enter a password"
+                                    placeholder={t('signin:password_placeholder')}
                                     onChangeText={handleChange('password')}
                                     onBlur={handleBlur('password')}
                                     value={values.password}
@@ -65,8 +67,8 @@ const SignIn: FC<IProps> = ({ navigation }) => {
                                     <Text style={error}>{errors.password}</Text>
                                 )}
                             </View>
-                            <Text style={forgotText}>Have you forgotten your password?</Text>
-                            <Button title='Log in' buttonColor={!values.email || !values.password || errors.password || errors.email ? 'grey' : 'dark'} disabled={!values.email || !values.password || errors.password || errors.email ? true : false} onPress={handleSubmit} buttonStyle={buttonStyle} />
+                            <Text style={forgotText}>{t('signin:forgotten_password')}</Text>
+                            <Button title={t('signin:btn_title')} buttonColor={!values.email || !values.password || errors.password || errors.email ? 'grey' : 'dark'} disabled={!values.email || !values.password || errors.password || errors.email ? true : false} onPress={handleSubmit} buttonStyle={buttonStyle} />
                         </ScrollView>
                     </KeyboardAvoidingView>
                     <BackButton navigation={navigation} />

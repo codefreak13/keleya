@@ -11,7 +11,6 @@ const createStyles = (theme: defaultThemeProps) =>
             flex: 1,
             resizeMode: 'cover',
             width: '100%',
-            backgroundColor: 'purple'
         },
         textStyle: {
             marginTop: RFValue(10),

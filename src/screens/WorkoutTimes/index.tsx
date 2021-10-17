@@ -6,6 +6,7 @@ import * as Yup from "yup";
 import {
     WheelPicker,
 } from "react-native-wheel-picker-android";
+import { useTranslation } from 'react-i18next';
 
 import createStyles from './styles';
 import { useTheme } from '../../utils/theme';
@@ -16,13 +17,9 @@ interface IProps {
     navigation: NavigationProp<ParamListBase>
 }
 
-const validationSchema = Yup.object().shape({
-    frequency: Yup.string()
-        .required('frequency is required')
-        .label('frequency')
-});
 
 const WorkoutTimes: FC<IProps> = ({ navigation }) => {
+    const { t } = useTranslation()
     const theme = useTheme();
     const styles = useMemo(() => createStyles(theme), [theme]);
     const { bodyStyle, buttonStyle, imageStyle, textStyle, details, selectedText } = styles
@@ -38,48 +35,50 @@ const WorkoutTimes: FC<IProps> = ({ navigation }) => {
     };
 
     const wheelPickerData = [
-        "Once a week",
-        "2 times a week",
-        "3 times a week",
-        "4 times a week",
-        "5 times a week",
-        "6 times a week",
-        "7 times a week",
-        "8 times a week",
-        "9 times a week",
-        "10 times a week",
+        t('activetimes:once'),
+        t('activetimes:twice'),
+        t('activetimes:thrice'),
+        t('activetimes:four'),
+        t('activetimes:five'),
+        t('activetimes:six'),
+        t('activetimes:seven'),
+        t('activetimes:eight'),
+        t('activetimes:nine'),
+        t('activetimes:ten'),
     ];
 
+    const validationSchema = Yup.object().shape({
+        frequency: Yup.string()
+            .required(t('activetimes:freq_validation'))
+            .label('frequency')
+    });
     return (
-        <View style={bodyStyle}>
-            <Image source={WORKOUT_GOAL} style={imageStyle} />
-            <Text style={textStyle}>How many times a week do{'\n'}you want to be active?</Text>
-
-            <Formik
-                initialValues={{ frequency: selectedItem }}
-                onSubmit={() => navigation.navigate('Notification')}
-                validationSchema={validationSchema}
-            >
-                {({ handleSubmit, values }) => (
-                    <>
-                        <View style={details}>
-                            <WheelPicker
-                                initPosition={selectedItem}
-                                selectedItem={values.frequency}
-                                data={wheelPickerData}
-                                onItemSelected={onItemSelected}
-                                hideIndicator
-                                selectedItemTextColor={theme.colors.BLACK}
-                            />
-                            <View style={selectedText} />
-                        </View>
-                        <Button title='Continue' buttonColor={'dark'} onPress={handleSubmit} buttonStyle={buttonStyle} />
-                    </>
-                )}
-            </Formik>
-            <BackButton navigation={navigation} />
-            <Line />
-        </View>
+        <Formik
+            initialValues={{ frequency: selectedItem }}
+            onSubmit={() => navigation.navigate('Notification')}
+            validationSchema={validationSchema}
+        >
+            {({ handleSubmit, values }) => (
+                <View style={bodyStyle}>
+                    <Image source={WORKOUT_GOAL} style={imageStyle} />
+                    <Text style={textStyle}>{t('activetimes:title')}</Text>
+                    <View style={details}>
+                        <WheelPicker
+                            initPosition={selectedItem}
+                            selectedItem={values.frequency}
+                            data={wheelPickerData}
+                            onItemSelected={onItemSelected}
+                            hideIndicator
+                            selectedItemTextColor={theme.colors.BLACK}
+                        />
+                        <View style={selectedText} />
+                    </View>
+                    <Button title={t('activetimes:btn_title')} buttonColor={'dark'} onPress={handleSubmit} buttonStyle={buttonStyle} />
+                    <BackButton navigation={navigation} />
+                    <Line />
+                </View>
+            )}
+        </Formik>
     )
 }
 
