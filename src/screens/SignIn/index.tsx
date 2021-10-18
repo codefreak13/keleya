@@ -26,7 +26,7 @@ const SignIn: FC<IProps> = ({ navigation }) => {
             .required('Email is required')
             .label('Email'),
         password: Yup.string()
-            .min(6, () => t('common:email_validation'))
+            .min(6, () => t('common:password_validation'))
             .required('Password is required')
             .label('Password'),
     });

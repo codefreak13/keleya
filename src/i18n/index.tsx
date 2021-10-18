@@ -2,8 +2,8 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import * as RNLocalize from 'react-native-localize';
 
-import en from './languages/en.json';
-import de from './languages/de.json';
+import en from './translations/en.json';
+import de from './translations/de.json';
 
 const LANGUAGES = {
     en,

@@ -14,8 +14,10 @@
     "signup": {
       "title": "Add your details below to set\nup an account",
       "privacy_policy": "I've read and accept the privacy policy",
-      "terms": "I accept the terms & condition and Keleya's advice",
-      "btn_title": "Create account"
+      "terms": "I accept the terms & conditions and Keleya's advice",
+      "btn_title": "Create account",
+      "privacy_policy_validation":"The privacy policy must be accepted",
+      "terms_&_conditions_validation":"Terms & conditions must be accepted"
     },
     "signin": {
       "title": "Welcome back!",

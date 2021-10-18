@@ -15,7 +15,9 @@
       "title": "Fügen Sie unten Ihre Daten hinzu, um\nein Konto einzurichten",
       "privacy_policy": "Ich habe die Datenschutzerklärung gelesen und akzeptiere sie",
       "terms": "Ich akzeptiere die Allgemeinen Geschäftsbedingungen und den Rat von Keleya",
-      "btn_title": "Benutzerkonto erstellen"
+      "btn_title": "Benutzerkonto erstellen",
+      "privacy_policy_validation":"Die Datenschutzerklärung muss akzeptiert werden",
+      "terms_&_conditions_validation":"Allgemeine Geschäftsbedingungen müssen akzeptiert werden"
     },
     "signin": {
       "title": "Willkommen zurück!",

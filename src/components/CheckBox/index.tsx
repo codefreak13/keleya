@@ -7,17 +7,14 @@ import { useTheme } from '../../utils/theme';
 
 interface IProps {
     title: string
-    check: boolean
+    check: boolean,
+    toggleCheck: () => void
 }
 
-const CheckBoxComponent: FC<IProps> = ({ title, check }) => {
+const CheckBoxComponent: FC<IProps> = ({ title, check, toggleCheck }) => {
     const theme = useTheme();
     const styles = useMemo(() => createStyles(theme), [theme]);
     const { main, textStyle } = styles
-
-    const toggleCheck = () => {
-        // isChecked({ check: !check })
-    };
 
     return (
         <View style={main}>

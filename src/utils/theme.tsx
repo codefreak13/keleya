@@ -5,18 +5,17 @@ import { lightColors, darkColors, ColorValue } from './colors';
 export const ThemeContext = React.createContext({
      isDark: false,
      colors: lightColors,
-     setScheme: () => { },
+     setScheme: (scheme: string) => { },
 });
 
 interface IProps {
      children: React.ReactNode;
 }
 
-export interface defaultThemeProps {
+export type defaultThemeProps = {
      isDark: boolean;
      colors: ColorValue;
-     setScheme: any
-     // (scheme: string) => void 
+     setScheme(scheme: string): void
 }
 
 const ThemeProvider: FC<IProps> = props => {

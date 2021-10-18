@@ -2,7 +2,7 @@ import React from 'react';
 import { StatusBar, SafeAreaView } from 'react-native';
 import Screens from './navigation';
 import { I18nextProvider } from 'react-i18next'
-import i18n from './translations'
+import i18n from './i18n'
 
 export default function App() {
     return (
