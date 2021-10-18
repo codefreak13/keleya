@@ -24,7 +24,7 @@
       "password_validation":"Passwort muss mindestens 6 Zeichen lang sein"
     },
     "name": {
-      "title": "Schön, dass Sie hier sind! Zuerst\nDinge zuerst, wie sollen wir\nSie anrufen?",
+      "title": "Schön, dass Sie hier sind! Das Wichtigste\nZuerst, wie sollen wir\nSie heißen?",
       "name_placeholder": "Dein Name",
       "btn_title": "fortsetzen",
       "name_validation":"Name ist erforderlic"
@@ -50,7 +50,7 @@
       "ten":"10 mal die Woche"
     },
     "notification": {
-      "title": "Erhalten Sie Benachrichtigungen, um \nIhre Motivation zu steigern",
+      "title": "Erhalten Sie Benachrichtigungen, um\nIhre Motivation zu steigern",
       "skip": "Überspringen",
       "btn_title": "Benachrichtigungen zulassen"
     }

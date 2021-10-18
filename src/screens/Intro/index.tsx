@@ -3,8 +3,7 @@ import { View, ImageBackground, Image, Text, Pressable } from 'react-native'
 import { NavigationProp, ParamListBase } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
 
-import createStyles from './styles';
-import { useTheme } from '../../utils/theme';
+import styles from './styles';
 import { KELEYA_LOGO, INTRO_IMAGE } from '../../assets'
 import { Button, Line, Progress } from '../../components'
 
@@ -14,8 +13,6 @@ interface IProps {
 
 const Intro: FC<IProps> = ({ navigation }) => {
     const { t } = useTranslation()
-    const theme = useTheme();
-    const styles = useMemo(() => createStyles(theme), [theme]);
     const { bodyStyle, logoStyle, imageStyle, textStyle, footer, loginTextStyle } = styles
     return (
         <View style={bodyStyle}>

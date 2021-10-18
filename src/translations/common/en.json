@@ -24,7 +24,7 @@
       "password_validation":"Password must be at least 6 characters"
     },
     "name": {
-      "title": "It's great that you're here! First\nthings first, hat should we\ncall you?",
+      "title": "It's great that you're here! First\nthings first, what should we\ncall you?",
       "name_placeholder": "Your Name",
       "btn_title": "Continue",
       "name_validation":"Name is required"
