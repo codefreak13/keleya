@@ -55,7 +55,7 @@ const Name: FC<IProps> = ({ navigation }) => {
                             </ScrollView>
                         </KeyboardAvoidingView>
                     </View>
-                    <Button title={t('name:btn_title')} buttonColor={!values.name || errors.name ? 'grey' : 'dark'} onPress={handleSubmit} buttonStyle={buttonStyle} />
+                    <Button title={t('common:btn_title')} buttonColor={!values.name || errors.name ? 'grey' : 'dark'} onPress={handleSubmit} buttonStyle={buttonStyle} />
                     <BackButton navigation={navigation} />
                     <Line />
                 </View>

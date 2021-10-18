@@ -62,7 +62,7 @@ const DueDate: FC<IProps> = ({ navigation }) => {
                             <Text style={error}>{errors.date}</Text>
                         )}
                     </View>
-                    <Button title={t('duedate:btn_title')} buttonColor={!values.date || errors.date ? 'grey' : 'dark'} buttonStyle={buttonStyle} onPress={handleSubmit} />
+                    <Button title={t('common:btn_title')} buttonColor={!values.date || errors.date ? 'grey' : 'dark'} buttonStyle={buttonStyle} onPress={handleSubmit} />
                     <BackButton navigation={navigation} />
                     <Line />
                 </View>

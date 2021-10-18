@@ -73,7 +73,7 @@ const WorkoutTimes: FC<IProps> = ({ navigation }) => {
                         />
                         <View style={selectedText} />
                     </View>
-                    <Button title={t('activetimes:btn_title')} buttonColor={'dark'} onPress={handleSubmit} buttonStyle={buttonStyle} />
+                    <Button title={t('common:btn_title')} buttonColor={'dark'} onPress={handleSubmit} buttonStyle={buttonStyle} />
                     <BackButton navigation={navigation} />
                     <Line />
                 </View>

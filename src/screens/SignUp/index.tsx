@@ -26,11 +26,11 @@ const SignUp: FC<IProps> = ({ navigation }) => {
     // const isChecked = ()=>setstate({})
     const validationSchema = Yup.object().shape({
         email: Yup.string()
-            .email(t('signup:email_validation'))
+            .email(t('common:email_validation'))
             .required('Email is required')
             .label('Email'),
         password: Yup.string()
-            .min(6, () => t('signup:password_validation'))
+            .min(6, () => t('common:password_validation'))
             .required('Password is required')
             .label('Password'),
     });
@@ -54,7 +54,7 @@ const SignUp: FC<IProps> = ({ navigation }) => {
                             >
                                 <View style={{ width: '100%' }}>
                                     <TextInput
-                                        placeholder={t('signup:email_placeholder')}
+                                        placeholder={t('common:email_placeholder')}
                                         onChangeText={handleChange('email')}
                                         onBlur={handleBlur('email')}
                                         value={values.email}
@@ -63,7 +63,7 @@ const SignUp: FC<IProps> = ({ navigation }) => {
                                         <Text style={error}>{errors.email}</Text>
                                     )}
                                     <TextInput
-                                        placeholder={t('signup:password_placeholder')}
+                                        placeholder={t('common:password_placeholder')}
                                         onChangeText={handleChange('password')}
                                         onBlur={handleBlur('password')}
                                         value={values.password}

@@ -1,4 +1,11 @@
 {
+  "common":{
+    "email_placeholder": "beispiel@gmail.com",
+    "password_placeholder": "Geben Sie ein Passwort ein",
+    "email_validation":"Bitte eine gültige Email eingeben",
+    "password_validation":"Passwort muss mindestens 6 Zeichen lang sein",
+    "btn_title": "fortsetzen"
+  },
     "intro": {
       "title": "Für eine fitte und entspannte\nSchwangerschaft",
       "signup_btn": "Loslegen",
@@ -6,37 +13,26 @@
     },
     "signup": {
       "title": "Fügen Sie unten Ihre Daten hinzu, um\nein Konto einzurichten",
-      "email_placeholder": "beispiel@gmail.com",
-      "password_placeholder": "Geben Sie ein Passwort ein",
       "privacy_policy": "Ich habe die Datenschutzerklärung gelesen und akzeptiere sie",
       "terms": "Ich akzeptiere die Allgemeinen Geschäftsbedingungen und den Rat von Keleya",
-      "btn_title": "Benutzerkonto erstellen",
-      "email_validation":"Bitte eine gültige Email eingeben",
-      "password_validation":"Passwort muss mindestens 6 Zeichen lang sein"
+      "btn_title": "Benutzerkonto erstellen"
     },
     "signin": {
       "title": "Willkommen zurück!",
-      "email_placeholder": "beispiel@gmail.com",
-      "password_placeholder": "Geben Sie ein Passwort ein",
       "forgotten_password": "Hast du dein Passwort vergessen?",
-      "btn_title": "Einloggen",
-      "email_validation":"Bitte eine gültige Email eingeben",
-      "password_validation":"Passwort muss mindestens 6 Zeichen lang sein"
+      "btn_title": "Einloggen"
     },
     "name": {
       "title": "Schön, dass Sie hier sind! Das Wichtigste\nZuerst, wie sollen wir\nSie heißen?",
       "name_placeholder": "Dein Name",
-      "btn_title": "fortsetzen",
       "name_validation":"Name ist erforderlic"
     },
     "duedate": {
       "title": "Wann ist dein Baby fällig, Sam?",
-      "btn_title": "fortsetzen",
       "date_validation":"Bitte Datum wählen"
     },
     "activetimes": {
       "title": "Wie oft pro Woche\nmöchten Sie aktiv sein?",
-      "btn_title": "fortsetzen",
       "freq_validation":"Frequenz ist erforderlich",
       "once":"Wöchentlich",
       "twice":"2 mal in der Woche",

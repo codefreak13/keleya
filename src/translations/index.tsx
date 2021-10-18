@@ -2,8 +2,8 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import * as RNLocalize from 'react-native-localize';
 
-import en from './common/en.json';
-import de from './common/de.json';
+import en from './languages/en.json';
+import de from './languages/de.json';
 
 const LANGUAGES = {
     en,
@@ -20,8 +20,7 @@ const LANGUAGE_DETECTOR: any = {
         callback(findBestAvailableLanguage?.languageTag || 'en');
     },
     init: () => { },
-    cacheUserLanguage: () => {
-    }
+    cacheUserLanguage: () => { }
 };
 
 i18n
