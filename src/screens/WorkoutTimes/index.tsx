@@ -1,12 +1,12 @@
 import React, { FC, useMemo, useState } from 'react'
 import { View, Image, Text } from 'react-native'
 import { NavigationProp, ParamListBase } from '@react-navigation/native';
+import { useTranslation } from 'react-i18next';
 import { Formik } from "formik";
 import * as Yup from "yup";
 import {
     WheelPicker,
 } from "react-native-wheel-picker-android";
-import { useTranslation } from 'react-i18next';
 
 import createStyles from './styles';
 import { useTheme } from '../../utils/theme';

@@ -1,6 +1,7 @@
 import React, { FC, useMemo } from 'react'
 import { View, Image, Text, ScrollView, KeyboardAvoidingView } from 'react-native'
 import { NavigationProp, ParamListBase } from '@react-navigation/native';
+import { useTranslation } from 'react-i18next';
 import { Formik } from "formik";
 import * as Yup from "yup";
 
@@ -8,7 +9,6 @@ import createStyles from './styles';
 import { useTheme } from '../../utils/theme';
 import { AUTHENTICATION } from '../../assets'
 import { Button, Line, BackButton, TextInput } from '../../components'
-import { useTranslation } from 'react-i18next';
 
 interface IProps {
     navigation: NavigationProp<ParamListBase>

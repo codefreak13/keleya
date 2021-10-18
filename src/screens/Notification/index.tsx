@@ -8,7 +8,7 @@ import { useTheme } from '../../utils/theme';
 import { NOTIFICATIONS_IMAGE } from '../../assets'
 import { Button, Line } from '../../components'
 
-const WorkoutTimes = () => {
+const Notification = () => {
     const { t } = useTranslation()
     const theme = useTheme();
     const styles = useMemo(() => createStyles(theme), [theme]);
@@ -29,4 +29,4 @@ const WorkoutTimes = () => {
     )
 }
 
-export default WorkoutTimes
+export default Notification

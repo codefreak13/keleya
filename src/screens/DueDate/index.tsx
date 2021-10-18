@@ -1,10 +1,9 @@
 import React, { FC, useMemo, useState } from 'react'
 import { View, Image, Text, } from 'react-native'
 import { NavigationProp, ParamListBase } from '@react-navigation/native';
+import { useTranslation } from 'react-i18next';
 import { Formik } from "formik";
 import * as Yup from "yup";
-import { useTranslation } from 'react-i18next';
-// import DateTimePicker from '@react-native-community/datetimepicker';
 
 import createStyles from './styles';
 import { useTheme } from '../../utils/theme';
@@ -21,13 +20,6 @@ const DueDate: FC<IProps> = ({ navigation }) => {
     const theme = useTheme();
     const styles = useMemo(() => createStyles(theme), [theme]);
     const { bodyStyle, buttonStyle, imageStyle, textStyle, details, error } = styles
-    const [date, setDate] = useState(new Date());
-
-    const onChange = (e: any, selectedDate: any) => {
-        const currentDate = selectedDate || date;
-
-        setDate(currentDate);
-    };
 
     const validationSchema = Yup.object().shape({
         date: Yup.date()
@@ -50,14 +42,6 @@ const DueDate: FC<IProps> = ({ navigation }) => {
                             date={values.date}
                             action={handleChange('date')}
                         />
-                        {/* <DateTimePicker
-                            testID="dateTimePicker"
-                            value={date}
-                            mode={'date'}
-                            is24Hour={true}
-                            display="default"
-                            onChange={onChange}
-                        /> */}
                         {touched.date && errors.date && (
                             <Text style={error}>{errors.date}</Text>
                         )}
