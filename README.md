@@ -53,7 +53,7 @@ I handled validation with formik and yup.
 Typescript also came in handy for type checking.   
 The app supports Internationalization and localization for two languages; English and German.   
 I customized the app to enable seamless color theme transitioning.   
-I also ran snapshot testing and used redux for state management.
+I also ran snapshot tests and used redux for state management.
 
 
 
