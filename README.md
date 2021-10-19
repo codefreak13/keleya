@@ -34,7 +34,7 @@ To clone the application, copy and paste any of the commands below to your machi
 > git clone https://github.com/codefreak13/keleya-pregnancy-app.git
 ##
 
-After cloning the app, open the app folder with your favourite IDE or code editor and install node modules by pasting and running the command below to your IDE terminal.
+After cloning the app, open the app folder with your favourite IDE or code editor and install node modules with the command below
 
 > npm install
 ##
