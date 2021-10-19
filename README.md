@@ -52,8 +52,8 @@ Building the Keleya pregnancy app UI was an interesting feat.
 I handled validation with formik and yup.   
 Typescript also came in handy for type checking.   
 The app supports Internationalization and localization for two languages; English and German.   
-I customized the app to enable seamless color theme transitioning with desirable colors.   
-I also did snapshot testing and used redux for state management.
+I customized the app to enable seamless color theme transitioning.   
+I also ran snapshot testing and used redux for state management.
 
 
 
