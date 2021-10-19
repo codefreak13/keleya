@@ -10,10 +10,10 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.15.8",
     "@react-native-async-storage/async-storage": "^1.15.9",
     "@react-navigation/native": "^6.0.5",
     "@react-navigation/stack": "^6.0.10",
+    "@reduxjs/toolkit": "^1.6.2",
     "@types/yup": "^0.29.13",
     "formik": "^2.2.9",
     "i18next": "^21.2.4",
@@ -30,6 +30,8 @@
     "react-native-screens": "^3.8.0",
     "react-native-vector-icons": "^8.1.0",
     "react-native-wheel-picker-android": "^2.0.6",
+    "react-redux": "^7.2.5",
+    "redux-thunk": "^2.3.0",
     "yup": "^0.32.10"
   },
   "devDependencies": {
@@ -61,6 +63,9 @@
       "jsx",
       "json",
       "node"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-(native|universal|navigation)-(.*)|@react-native-community/(.*)|@react-navigation/(.*)||@react-native-responsive-fontsize/(.*)|bs-platform|(@[a-zA-Z]+/)?(bs|reason|rescript)-(.*)+)"
     ]
   }
 }

@@ -17,7 +17,13 @@ const LANGUAGE_DETECTOR: any = {
     async: true,
     detect: async (callback: (arg0: string) => void) => {
         const findBestAvailableLanguage = RNLocalize.findBestAvailableLanguage(LANG_CODES);
-        callback(findBestAvailableLanguage?.languageTag || 'en');
+
+        if (Object.keys(LANGUAGES).includes(findBestAvailableLanguage?.languageTag || 'en')) {
+            callback(findBestAvailableLanguage?.languageTag || 'en');
+            return
+        }
+
+        callback('en');
     },
     init: () => { },
     cacheUserLanguage: () => { }

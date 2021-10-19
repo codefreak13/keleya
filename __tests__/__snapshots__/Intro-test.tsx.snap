@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Intro snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "paddingTop": 39,
+    }
+  }
+>
+  <View
+    accessibilityIgnoresInvertColors={true}
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 4,
+        "height": "120%",
+        "paddingTop": 59,
+        "resizeMode": "contain",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/Images/first-intro-image.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "height": "120%",
+            "width": undefined,
+          },
+          undefined,
+        ]
+      }
+    />
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/Images/keleya-logo.png",
+        }
+      }
+      style={
+        Object {
+          "height": 196,
+          "resizeMode": "contain",
+          "width": 196,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "#4a4a4a",
+          "fontSize": 35,
+          "fontWeight": "500",
+          "marginTop": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      intro:title
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "alignSelf": "center",
+            "borderRadius": 10,
+            "padding": 20,
+            "width": "75%",
+          },
+          undefined,
+          Object {
+            "backgroundColor": "#69c0ba",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#ffffff",
+              "fontSize": 35,
+              "textAlign": "center",
+            },
+            undefined,
+          ]
+        }
+      >
+        intro:signup_btn
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+    >
+      <Text
+        style={
+          Object {
+            "color": "#4a4a4a",
+            "fontSize": 33,
+            "fontWeight": "bold",
+            "marginTop": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        intro:login_btn
+      </Text>
+      <View
+        style={
+          Object {
+            "alignSelf": "center",
+            "flexDirection": "row",
+            "marginTop": 29,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Array [
+                Object {
+                  "backgroundColor": "#9adcd7",
+                  "borderRadius": 196,
+                  "height": 18,
+                  "marginHorizontal": 7,
+                  "width": 18,
+                },
+                Object {
+                  "backgroundColor": "#69c0ba",
+                },
+              ],
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#9adcd7",
+                "borderRadius": 196,
+                "height": 18,
+                "marginHorizontal": 7,
+                "width": 18,
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#9adcd7",
+                "borderRadius": 196,
+                "height": 18,
+                "marginHorizontal": 7,
+                "width": 18,
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "backgroundColor": "#4a4a4a",
+        "borderRadius": 10,
+        "bottom": 10,
+        "height": 8,
+        "position": "relative",
+        "width": "35%",
+      }
+    }
+  />
+</View>
+`;

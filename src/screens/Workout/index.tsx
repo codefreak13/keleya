@@ -18,7 +18,7 @@ interface IProps {
 }
 
 
-const WorkoutTimes: FC<IProps> = ({ navigation }) => {
+const Workout: FC<IProps> = ({ navigation }) => {
     const { t } = useTranslation()
     const theme = useTheme();
     const styles = useMemo(() => createStyles(theme), [theme]);
@@ -35,33 +35,33 @@ const WorkoutTimes: FC<IProps> = ({ navigation }) => {
     };
 
     const wheelPickerData = [
-        t('activetimes:once'),
-        t('activetimes:twice'),
-        t('activetimes:thrice'),
-        t('activetimes:four'),
-        t('activetimes:five'),
-        t('activetimes:six'),
-        t('activetimes:seven'),
-        t('activetimes:eight'),
-        t('activetimes:nine'),
-        t('activetimes:ten'),
+        t('workout:once'),
+        t('workout:twice'),
+        t('workout:thrice'),
+        t('workout:four'),
+        t('workout:five'),
+        t('workout:six'),
+        t('workout:seven'),
+        t('workout:eight'),
+        t('workout:nine'),
+        t('workout:ten'),
     ];
 
     const validationSchema = Yup.object().shape({
         frequency: Yup.string()
-            .required(t('activetimes:freq_validation'))
+            .required(t('workout:freq_validation'))
             .label('frequency')
     });
     return (
         <Formik
             initialValues={{ frequency: selectedItem }}
-            onSubmit={() => navigation.navigate('Notification')}
+            onSubmit={() => navigation.navigate('Success')}
             validationSchema={validationSchema}
         >
             {({ handleSubmit, values }) => (
                 <View style={bodyStyle}>
                     <Image source={WORKOUT_GOAL} style={imageStyle} />
-                    <Text style={textStyle}>{t('activetimes:title')}</Text>
+                    <Text style={textStyle}>{t('workout:title')}</Text>
                     <View style={details}>
                         <WheelPicker
                             initPosition={selectedItem}
@@ -82,4 +82,4 @@ const WorkoutTimes: FC<IProps> = ({ navigation }) => {
     )
 }
 
-export default WorkoutTimes
+export default Workout

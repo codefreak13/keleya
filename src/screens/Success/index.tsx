@@ -8,7 +8,7 @@ import { useTheme } from '../../utils/theme';
 import { NOTIFICATIONS_IMAGE } from '../../assets'
 import { Button, Line } from '../../components'
 
-const Notification = () => {
+const Success = () => {
     const { t } = useTranslation()
     const theme = useTheme();
     const styles = useMemo(() => createStyles(theme), [theme]);
@@ -19,14 +19,14 @@ const Notification = () => {
             <ImageBackground source={NOTIFICATIONS_IMAGE} style={imageStyle} >
                 <View style={titleStyle}>
                     <Icon name="bell" size={70} color={theme.colors.GREYISH_BROWN} />
-                    <Text style={textStyle}>{t('notification:title')}</Text>
+                    <Text style={textStyle}>{t('success:title')}</Text>
                 </View>
-                <Text style={skipTextStyle}>{t('notification:skip')}</Text>
+                <Text style={skipTextStyle}>{t('success:skip')}</Text>
             </ImageBackground>
-            <Button title={t('notification:btn_title')} buttonColor={'dark'} buttonStyle={buttonStyle} />
+            <Button title={t('success:btn_title')} buttonColor={'dark'} buttonStyle={buttonStyle} />
             <Line />
         </>
     )
 }
 
-export default Notification
+export default Success

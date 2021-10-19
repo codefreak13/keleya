@@ -30,7 +30,7 @@ const Name: FC<IProps> = ({ navigation }) => {
         <Formik
             initialValues={{ name: '' }}
             validationSchema={validationSchema}
-            onSubmit={() => navigation.navigate('DueDate')}
+            onSubmit={() => navigation.navigate('Date')}
         >
             {({ touched, errors, handleChange, handleBlur, handleSubmit, values }) => (
                 <View style={bodyStyle}>

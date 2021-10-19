@@ -33,7 +33,7 @@ const createStyles = (theme: defaultThemeProps) =>
             width: RFValue(200),
             height: RFValue(28),
             position: 'absolute',
-            top: RFValue(32),
+            top: RFValue(36),
             opacity: 0.3,
             borderRadius: RFValue(7),
             alignSelf: 'center',

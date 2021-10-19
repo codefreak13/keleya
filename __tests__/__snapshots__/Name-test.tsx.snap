@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Name snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/Images/couch_smile.jpg",
+      }
+    }
+    style={
+      Object {
+        "flex": 5,
+        "resizeMode": "cover",
+        "width": "100%",
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "#4a4a4a",
+        "fontSize": 35,
+        "marginTop": 20,
+        "textAlign": "center",
+      }
+    }
+  >
+    name:title
+  </Text>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "flex": 1,
+        "width": "75%",
+      }
+    }
+  >
+    <View
+      onLayout={[Function]}
+    >
+      <RCTScrollView
+        contentContainerStyle={
+          Object {
+            "flexGrow": 1,
+          }
+        }
+        keyboardShouldPersistTaps="handled"
+        showsVerticalScrollIndicator={false}
+      >
+        <View>
+          <TextInput
+            onBlur={[Function]}
+            onChangeText={[Function]}
+            placeholder="name:name_placeholder"
+            placeholderTextColor="#9b9b9b"
+            secureTextEntry={false}
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "borderBottomWidth": 0.7,
+                  "borderColor": "#9b9b9b",
+                  "color": "#4a4a4a",
+                  "fontSize": 27,
+                  "marginVertical": 16,
+                  "padding": 14,
+                  "paddingLeft": 39,
+                  "width": "100%",
+                },
+                undefined,
+              ]
+            }
+            textAlign="center"
+            value=""
+          />
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "borderRadius": 10,
+          "padding": 20,
+          "width": "75%",
+        },
+        Object {
+          "marginBottom": 39,
+        },
+        Object {
+          "backgroundColor": "#9b9b9b",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontSize": 35,
+            "textAlign": "center",
+          },
+          undefined,
+        ]
+      }
+    >
+      common:btn_title
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "left": 20,
+        "position": "absolute",
+        "top": 59,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#4a4a4a",
+            "fontSize": 20,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Entypo",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "backgroundColor": "#4a4a4a",
+        "borderRadius": 10,
+        "bottom": 10,
+        "height": 8,
+        "position": "relative",
+        "width": "35%",
+      }
+    }
+  />
+</View>
+`;

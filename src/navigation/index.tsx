@@ -10,9 +10,9 @@ import {
   SignIn,
   SignUp,
   Name,
-  DueDate,
-  WorkoutTimes,
-  Notification
+  Date,
+  Workout,
+  Success
 } from '../screens'
 
 export type MainStackParamList = {
@@ -20,9 +20,9 @@ export type MainStackParamList = {
   SignIn: undefined;
   SignUp: undefined;
   Name: undefined;
-  DueDate: undefined;
-  WorkoutTimes: undefined;
-  Notification: undefined;
+  Date: undefined;
+  Workout: undefined;
+  Success: undefined;
 };
 
 const MainStack = createStackNavigator<MainStackParamList>();
@@ -55,9 +55,9 @@ export default function App() {
           <MainStack.Screen name="SignIn" component={SignIn} />
           <MainStack.Screen name="SignUp" component={SignUp} />
           <MainStack.Screen name="Name" component={Name} />
-          <MainStack.Screen name="DueDate" component={DueDate} />
-          <MainStack.Screen name="WorkoutTimes" component={WorkoutTimes} />
-          <MainStack.Screen name="Notification" component={Notification} />
+          <MainStack.Screen name="Date" component={Date} />
+          <MainStack.Screen name="Workout" component={Workout} />
+          <MainStack.Screen name="Success" component={Success} />
         </MainStack.Navigator>
       </NavigationContainer>
     </ThemeProvider>

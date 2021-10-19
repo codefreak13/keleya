@@ -17,7 +17,7 @@ export const lightColors: ColorValue = {
     WARM_GREY: '#9b9b9b',
     BUBBLE_GUM: '#e97db5',
     LIGHT_GREY: '#e0e0e0',
-    BLUE: '#3c60f2'
+    BLUE: '#0A7DFF'
 };
 
 export const darkColors: ColorValue = {
@@ -28,5 +28,5 @@ export const darkColors: ColorValue = {
     WARM_GREY: '#9b9b9b',
     BUBBLE_GUM: '#e97db5',
     LIGHT_GREY: 'grey',
-    BLUE: '#3c60f2'
+    BLUE: '#0A7DFF'
 };

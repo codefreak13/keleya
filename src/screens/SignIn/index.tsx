@@ -34,7 +34,7 @@ const SignIn: FC<IProps> = ({ navigation }) => {
         <Formik
             initialValues={{ email: '', password: '' }}
             validationSchema={validationSchema}
-            onSubmit={() => navigation.navigate('Notification')}
+            onSubmit={() => navigation.navigate('Success')}
         >
             {({ touched, errors, handleChange, handleBlur, handleSubmit, values }) => (
                 <View style={bodyStyle}>

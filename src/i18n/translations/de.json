@@ -29,11 +29,11 @@
       "name_placeholder": "Dein Name",
       "name_validation":"Name ist erforderlic"
     },
-    "duedate": {
+    "date": {
       "title": "Wann ist dein Baby fällig, Sam?",
       "date_validation":"Bitte Datum wählen"
     },
-    "activetimes": {
+    "workout": {
       "title": "Wie oft pro Woche\nmöchten Sie aktiv sein?",
       "freq_validation":"Frequenz ist erforderlich",
       "once":"Wöchentlich",
@@ -47,7 +47,7 @@
       "nine":"9 mal die Woche",
       "ten":"10 mal die Woche"
     },
-    "notification": {
+    "success": {
       "title": "Erhalten Sie Benachrichtigungen, um\nIhre Motivation zu steigern",
       "skip": "Überspringen",
       "btn_title": "Benachrichtigungen zulassen"

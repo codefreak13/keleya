@@ -15,7 +15,7 @@ interface IProps {
 }
 
 
-const DueDate: FC<IProps> = ({ navigation }) => {
+const Date: FC<IProps> = ({ navigation }) => {
     const { t } = useTranslation()
     const theme = useTheme();
     const styles = useMemo(() => createStyles(theme), [theme]);
@@ -23,19 +23,19 @@ const DueDate: FC<IProps> = ({ navigation }) => {
 
     const validationSchema = Yup.object().shape({
         date: Yup.date()
-            .required(t('duedate:date_validation'))
+            .required(t('date:date_validation'))
             .label('date')
     });
     return (
         <Formik
             initialValues={{ date: '' }}
             validationSchema={validationSchema}
-            onSubmit={() => { navigation.navigate('WorkoutTimes') }}
+            onSubmit={() => { navigation.navigate('Workout') }}
         >
             {({ touched, errors, handleChange, handleSubmit, values }) => (
                 <View style={bodyStyle}>
                     <Image source={DUEDATE} style={imageStyle} />
-                    <Text style={textStyle}>{t('duedate:title')}</Text>
+                    <Text style={textStyle}>{t('date:title')}</Text>
 
                     <View style={details}>
                         <DatePicker
@@ -55,4 +55,4 @@ const DueDate: FC<IProps> = ({ navigation }) => {
     )
 }
 
-export default DueDate
+export default Date

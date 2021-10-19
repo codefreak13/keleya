@@ -29,11 +29,11 @@
       "name_placeholder": "Your Name",
       "name_validation":"Name is required"
     },
-    "duedate": {
+    "date": {
       "title": "When is your baby due, Sam?",
       "date_validation":"Please choose date"
     },
-    "activetimes": {
+    "workout": {
       "title": "How many times a week do\nyou want to be active?",
       "freq_validation":"frequency is required",
       "once":"Once a week",
@@ -47,7 +47,7 @@
       "nine":"9 times a week",
       "ten":"10 times a week"
     },
-    "notification": {
+    "success": {
       "title": "Get notifications to boost\nyour motivation",
       "skip": "Skip",
       "btn_title": "Allow notifications"

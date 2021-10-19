@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Success snapshot 1`] = `
+Array [
+  <View
+    accessibilityIgnoresInvertColors={true}
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "space-between",
+        "paddingTop": 50,
+        "resizeMode": "cover",
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../src/assets/Images/notifications-background-image.jpg",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "height": undefined,
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "#4a4a4a",
+              "fontSize": 70,
+            },
+            undefined,
+            Object {
+              "fontFamily": "EvilIcons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "#4a4a4a",
+            "fontSize": 35,
+            "marginVertical": 39,
+            "textAlign": "center",
+          }
+        }
+      >
+        success:title
+      </Text>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#4a4a4a",
+          "fontSize": 29,
+          "fontWeight": "bold",
+          "marginVertical": 49,
+        }
+      }
+    >
+      success:skip
+    </Text>
+  </View>,
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "borderRadius": 10,
+          "padding": 20,
+          "width": "75%",
+        },
+        Object {
+          "marginBottom": 39,
+        },
+        Object {
+          "backgroundColor": "#69c0ba",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontSize": 35,
+            "textAlign": "center",
+          },
+          undefined,
+        ]
+      }
+    >
+      success:btn_title
+    </Text>
+  </View>,
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "backgroundColor": "#4a4a4a",
+        "borderRadius": 10,
+        "bottom": 10,
+        "height": 8,
+        "position": "relative",
+        "width": "35%",
+      }
+    }
+  />,
+]
+`;
