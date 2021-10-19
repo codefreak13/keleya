@@ -15,6 +15,7 @@ const createStyles = (theme: defaultThemeProps) =>
             marginLeft: -RFValue(10),
             width: '85%',
             flexWrap: 'wrap',
+            color: theme.colors.GREYISH_BROWN
         }
     });
 

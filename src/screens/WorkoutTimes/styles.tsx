@@ -16,9 +16,10 @@ const createStyles = (theme: defaultThemeProps) =>
             position: 'absolute',
             zIndex: 10,
             top: RFValue(70),
-            fontSize: RFValue(20),
+            fontSize: RFValue(18),
             alignSelf: 'center',
-            textAlign: 'center'
+            textAlign: 'center',
+            color: theme.colors.GREYISH_BROWN
         },
         details: {
             flex: 1,
@@ -28,18 +29,18 @@ const createStyles = (theme: defaultThemeProps) =>
             marginBottom: RFValue(20),
         },
         selectedText: {
-            backgroundColor: theme.colors.LIGHT_GREY,
+            backgroundColor: theme.colors.WARM_GREY,
             width: RFValue(200),
             height: RFValue(28),
             position: 'absolute',
-            top: RFValue(38),
-            opacity: 0.8,
+            top: RFValue(32),
+            opacity: 0.3,
             borderRadius: RFValue(7),
             alignSelf: 'center',
             zIndex: -10
         },
         error: {
-            color: theme.colors.DANGER
+            color: theme.colors.BUBBLE_GUM
         }
     });
 

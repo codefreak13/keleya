@@ -18,12 +18,12 @@ const Notification = () => {
         <>
             <ImageBackground source={NOTIFICATIONS_IMAGE} style={imageStyle} >
                 <View style={titleStyle}>
-                    <Icon name="bell" size={70} color={theme.colors.BLACK} />
+                    <Icon name="bell" size={70} color={theme.colors.GREYISH_BROWN} />
                     <Text style={textStyle}>{t('notification:title')}</Text>
                 </View>
                 <Text style={skipTextStyle}>{t('notification:skip')}</Text>
             </ImageBackground>
-            <Button title={t('notification:btn_title')} buttonColor={'dark'} onPress={() => { }} buttonStyle={buttonStyle} />
+            <Button title={t('notification:btn_title')} buttonColor={'dark'} buttonStyle={buttonStyle} />
             <Line />
         </>
     )

@@ -10,10 +10,11 @@ const createStyles = (theme: defaultThemeProps) =>
             justifyContent: 'center',
             alignItems: 'center',
             borderRadius: RFValue(5),
-            backgroundColor: theme.colors.LIGHT_GREY,
+            backgroundColor: theme.colors.WARM_GREY,
             height: RFValue(32),
             width: RFValue(screenWidth / 4),
-            alignSelf: 'center'
+            alignSelf: 'center',
+            opacity: 0.5
         },
         dateInput: {
             borderWidth: 0,
@@ -21,7 +22,8 @@ const createStyles = (theme: defaultThemeProps) =>
         },
         dateText: {
             color: theme.colors.BLUE,
-            alignSelf: 'center'
+            alignSelf: 'center',
+            opacity: 0.9,
         },
     });
 

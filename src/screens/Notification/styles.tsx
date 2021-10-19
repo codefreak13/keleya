@@ -16,15 +16,17 @@ const createStyles = (theme: defaultThemeProps) =>
             alignItems: 'center'
         },
         textStyle: {
-            fontSize: RFValue(20),
+            fontSize: RFValue(18),
             alignSelf: 'center',
             textAlign: 'center',
-            marginVertical: RFValue(20)
+            marginVertical: RFValue(20),
+            color: theme.colors.GREYISH_BROWN
         },
         skipTextStyle: {
             fontSize: RFValue(15),
             fontWeight: 'bold',
-            marginVertical: RFValue(25)
+            marginVertical: RFValue(25),
+            color: theme.colors.GREYISH_BROWN
         },
         buttonStyle: {
             marginBottom: RFValue(20),

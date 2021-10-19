@@ -10,7 +10,6 @@ export default function App() {
             <SafeAreaView style={{ flex: 1, }}>
                 <StatusBar
                     barStyle='dark-content'
-                    backgroundColor="#EAEDF4"
                     translucent={true}
                 />
                 <Screens />

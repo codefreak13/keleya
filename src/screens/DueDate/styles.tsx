@@ -15,8 +15,9 @@ const createStyles = (theme: defaultThemeProps) =>
         textStyle: {
             marginTop: -RFValue(50),
             marginBottom: RFValue(20),
-            fontSize: RFValue(20),
+            fontSize: RFValue(18),
             textAlign: 'center',
+            color: theme.colors.GREYISH_BROWN
         },
         details: {
             flex: 1,
@@ -27,7 +28,7 @@ const createStyles = (theme: defaultThemeProps) =>
             marginBottom: RFValue(20),
         },
         error: {
-            color: theme.colors.DANGER,
+            color: theme.colors.BUBBLE_GUM,
             alignSelf: 'center'
         }
     });

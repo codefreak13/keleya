@@ -5,7 +5,7 @@ import { defaultThemeProps } from '../../utils/theme'
 const createStyles = (theme: defaultThemeProps) =>
     StyleSheet.create({
         style: {
-            backgroundColor: theme.colors.BLACK,
+            backgroundColor: theme.colors.GREYISH_BROWN,
             position: 'relative',
             bottom: RFValue(5),
             height: RFValue(4),

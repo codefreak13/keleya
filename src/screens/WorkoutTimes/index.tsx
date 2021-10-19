@@ -69,7 +69,7 @@ const WorkoutTimes: FC<IProps> = ({ navigation }) => {
                             data={wheelPickerData}
                             onItemSelected={onItemSelected}
                             hideIndicator
-                            selectedItemTextColor={theme.colors.BLACK}
+                            selectedItemTextColor={theme.colors.GREYISH_BROWN}
                         />
                         <View style={selectedText} />
                     </View>

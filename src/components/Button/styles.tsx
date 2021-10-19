@@ -13,7 +13,7 @@ const createStyles = (theme: defaultThemeProps) =>
         },
         textStyle: {
             color: theme.colors.WHITE,
-            fontSize: RFValue(20),
+            fontSize: RFValue(18),
             textAlign: 'center'
         }
     });

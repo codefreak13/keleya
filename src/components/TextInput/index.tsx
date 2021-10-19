@@ -26,7 +26,7 @@ const BaseTextInput: FC<IProps> = ({ onChangeText, onBlur, placeholder, placehol
 
     const onToggle = () => setIsSecure(previousState => !previousState);
 
-    const toggleIcon = <Icon name={isSecure ? "eye-with-line" : 'eye'} size={20} color={theme.colors.BLACK} onPress={onToggle} style={iconStyle} />
+    const toggleIcon = <Icon name={isSecure ? "eye-with-line" : 'eye'} size={20} color={theme.colors.GREYISH_BROWN} onPress={onToggle} style={iconStyle} />
 
     return (
         <>

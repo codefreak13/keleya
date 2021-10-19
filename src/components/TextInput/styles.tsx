@@ -19,6 +19,7 @@ const createStyles = (theme: defaultThemeProps) =>
             alignSelf: 'center',
             paddingLeft: RFValue(20),
             marginVertical: RFValue(8),
+            color: theme.colors.GREYISH_BROWN
         },
     });
 

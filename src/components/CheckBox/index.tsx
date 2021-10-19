@@ -20,8 +20,8 @@ const CheckBoxComponent: FC<IProps> = ({ title, check, toggleCheck }) => {
         <View style={main}>
             <CheckBox
                 checked={check}
-                checkedColor="#469D8E"
-                uncheckedColor="#469D8E"
+                uncheckedColor={theme.colors.LIGHT_TEAL}
+                checkedColor={theme.colors.PALE_TEAL}
                 onPress={toggleCheck}
             />
             <Text style={textStyle}>{title}</Text>
