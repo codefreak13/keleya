@@ -14,7 +14,6 @@ interface IProps {
     navigation: NavigationProp<ParamListBase>
 }
 
-
 const Date: FC<IProps> = ({ navigation }) => {
     const { t } = useTranslation()
     const theme = useTheme();

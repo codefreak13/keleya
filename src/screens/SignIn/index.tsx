@@ -51,7 +51,7 @@ const SignIn: FC<IProps> = ({ navigation }) => {
                                     placeholder={t('common:email_placeholder')}
                                     onChangeText={handleChange('email')}
                                     onBlur={handleBlur('email')}
-                                    value={values.email}
+                                    value={values.email.trim()}
                                 />
                                 {touched.email && errors.email && (
                                     <Text style={error}>{errors.email}</Text>

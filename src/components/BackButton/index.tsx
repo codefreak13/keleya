@@ -16,7 +16,7 @@ const BackButton: FC<IProps> = ({ navigation }) => {
 
     return (
         <Pressable style={styles.headerStyle} onPress={() => navigation.goBack()}>
-            <Icon name="arrow-left" size={20} color={theme.colors.GREYISH_BROWN} />
+            <Icon name="arrow-left" size={25} color={theme.colors.GREYISH_BROWN} />
         </Pressable >
     )
 }
